@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>COVID-19 - Venezuela</title>
+	<link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+	<main>
+	  <section id="absoluteDataSection">
+		<div id="Confirmed" class="counted-cases-container">
+		</div>
+		<div id="Active" class="counted-cases-container">
+		</div>
+		<div id="Recovered" class="counted-cases-container">
+		</div>
+		<div id="Deaths" class="counted-cases-container">
+		</div>
+	  </section>
+	  <section id="chartsSection">
+		<div  class="chartContainer">
+		  <canvas id="ByAgeRange"></canvas>
+		</div>
+		<div  class="chartContainer">
+		  <canvas id="ByState"></canvas>
+		</div>
+		<div  class="chartContainer">
+		  <canvas id="ByGender"></canvas>
+		</div>
+		<div  class="chartContainer">
+		  <canvas id="timelineConfirmed"></canvas>
+		</div>
+		<div  class="chartContainer">
+		  <canvas id="timelineNewConfirmed"></canvas>
+		</div>
+		<div  class="chartContainer">
+		  <canvas id="timelineRecovered"></canvas>
+		</div>
+		<div  class="chartContainer">
+		  <canvas id="timelineNewRecovered"></canvas>
+		</div>
+		<div  class="chartContainer">
+		  <canvas id="timelineDeaths"></canvas>
+		</div>
+		<div  class="chartContainer">
+		  <canvas id="timelineNewDeaths"></canvas>
+		</div>
+		<div  class="chartContainer">
+		  <canvas id="timelineActive"></canvas>
+		</div>
+	  </section>
+	</main>
+	<script type="module" src="./js/index.js"></script>
+  </body>
+</html>

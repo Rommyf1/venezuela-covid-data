@@ -1,0 +1,35 @@
+{
+  "name": "venezuela-covid-data",
+  "version": "1.0.0",
+  "description": "Resource to visualize data related to evolution of COVID-19 desease in Venezuela, using the public API provided from patria.org platform for get the data and Chart.js library to visualize them",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rommyf1/venezuela-covid-data.git"
+  },
+  "keywords": [
+    "venezuela",
+    "covid",
+    "covid-19",
+    "data",
+    "charts",
+    "chart.js"
+  ],
+  "author": "Rommy Fernández",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rommyf1/venezuela-covid-data/issues"
+  },
+  "homepage": "https://github.com/Rommyf1/venezuela-covid-data#readme",
+  "dependencies": {
+    "chart.js": "^3.5.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

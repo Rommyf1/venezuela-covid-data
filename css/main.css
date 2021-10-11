@@ -1,0 +1,9 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+canvas{
+  width: 90vw;
+  height: 600px;
+}
