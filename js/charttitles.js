@@ -9,8 +9,11 @@ export const summaryTitles = {
 };
 
 export const timelineTitles = {
-	Confirmed: "Casos Confirmados en el tiempo",
-	Recovered: "Personas Recuperadas en el tiempo",
-	Deaths: "Personas Fallecidas en el tiempo",
-	Active: "Casos Activos en el tiempo"
+	totalConfirmedCases: "Total de Casos Confirmados por Día",
+	newConfirmedCases: "Nuevos Casos Confirmados por Día",
+	totalRecoveredCases: "Total de Casos Recuperados por Día",
+	newRecoveredCases: "Nuevos Casos Recuperados por Día",
+	totalDeaths: "Total de Personas Fallecidas por Día",
+	newDeaths: "Cantidad de Nuevos Fallecidos por Día",
+	totalActiveCases: "Total de Casos Activos por Día"
 };
