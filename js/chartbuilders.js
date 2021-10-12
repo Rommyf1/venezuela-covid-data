@@ -141,7 +141,7 @@ export const createAllTimelineCharts = (data) => {
 
 	createGraphic(
 		totalConfirmedCases,
-		"Total de Casos Confirmados por día",
+		timelineTitles["totalConfirmedCases"],
 		totalConfirmedCasesTimeline["date"],
 		totalConfirmedCasesTimeline["fieldToShow"],
 		"line"
@@ -149,7 +149,7 @@ export const createAllTimelineCharts = (data) => {
 
 	createGraphic(
 		newConfirmedCases,
-		"Nuevos Casos Confirmados por Día",
+		timelineTitles["newConfirmedCases"],
 		newConfirmedCasesTimeline["date"],
 		newConfirmedCasesTimeline["fieldToShow"],
 		"bar"
@@ -157,7 +157,7 @@ export const createAllTimelineCharts = (data) => {
 
 	createGraphic(
 		totalRecoveredCases,
-		"Total de Casos Recuperados por Día",
+		timelineTitles["totalRecoveredCases"],
 		totalRecoveredCasesTimeline["date"],
 		totalRecoveredCasesTimeline["fieldToShow"],
 		"line"
@@ -165,7 +165,7 @@ export const createAllTimelineCharts = (data) => {
 
 	createGraphic(
 		newRecoveredCases,
-		"Nuevos Casos Recuperados por Día",
+		timelineTitles["newRecoveredCases"],
 		newRecoveredCasesTimeline["date"],
 		newRecoveredCasesTimeline["fieldToShow"],
 		"bar"
@@ -173,7 +173,7 @@ export const createAllTimelineCharts = (data) => {
 
 	createGraphic(
 		totalDeaths,
-		"Total de Personas fallecidas por Día",
+		timelineTitles["totalDeaths"],
 		totalDeathsTimeline["date"],
 		totalDeathsTimeline["fieldToShow"],
 		"line"
@@ -181,7 +181,7 @@ export const createAllTimelineCharts = (data) => {
 
 	createGraphic(
 		newDeaths,
-		"Cantidad de Nuevos fallecidos por Día",
+		timelineTitles["newDeaths"],
 		newDeathsTimeline["date"],
 		newDeathsTimeline["fieldToShow"],
 		"bar"
@@ -189,7 +189,7 @@ export const createAllTimelineCharts = (data) => {
 
 	createGraphic(
 		totalActiveCases,
-		"Total de Casos Activos por Día",
+		timelineTitles["totalActiveCases"],
 		totalActiveCasesTimeline["date"],
 		totalActiveCasesTimeline["fieldToShow"],
 		"line"
