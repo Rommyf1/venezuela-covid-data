@@ -1,6 +1,8 @@
 import {setRandomColor} from './getcolors.js';
 import {summaryTitles, timelineTitles} from './charttitles.js';
-import Chart from '../node_modules/chart.js/auto/auto.esm.js';
+import {Chart, registerables} from '../node_modules/chart.js/dist/chart.esm.js';
+
+Chart.register(...registerables);
 
 export const createGraphic = (
 	element,
@@ -138,6 +140,20 @@ export const createAllTimelineCharts = (data) => {
 		totalActiveCasesTimeline["date"].push(element["Date"]);
 		totalActiveCasesTimeline["fieldToShow"].push(element["Active"]["Count"]);
 	});
+		
+		//Solución de Datos Errados en la API (Casos Confirmados)
+		newConfirmedCasesTimeline.fieldToShow[958] = 36;
+		totalConfirmedCasesTimeline.fieldToShow[958] = totalConfirmedCasesTimeline.fieldToShow[957] + newConfirmedCasesTimeline.fieldToShow[958]; 
+		newConfirmedCasesTimeline.fieldToShow[959] = 21;
+		totalConfirmedCasesTimeline.fieldToShow[959] = totalConfirmedCasesTimeline.fieldToShow[958] + newConfirmedCasesTimeline.fieldToShow[959]; 
+
+		//Solución de Datos Errados en la API (Casos Recuperados)
+		newRecoveredCasesTimeline.fieldToShow[958] = 92;
+		totalRecoveredCasesTimeline.fieldToShow[958] = totalRecoveredCasesTimeline.fieldToShow[957] + newRecoveredCasesTimeline.fieldToShow[958]; 
+		newRecoveredCasesTimeline.fieldToShow[959] = 54;
+		totalRecoveredCasesTimeline.fieldToShow[959] = totalRecoveredCasesTimeline.fieldToShow[958] + newRecoveredCasesTimeline.fieldToShow[959]; 
+		//Solución de Datos Errados en la API (Casos Activos)
+		totalActiveCasesTimeline.fieldToShow[958] = 634;
 
 	createGraphic(
 		totalConfirmedCases,
