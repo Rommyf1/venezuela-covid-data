@@ -146,14 +146,24 @@ export const createAllTimelineCharts = (data) => {
 		totalConfirmedCasesTimeline.fieldToShow[958] = totalConfirmedCasesTimeline.fieldToShow[957] + newConfirmedCasesTimeline.fieldToShow[958]; 
 		newConfirmedCasesTimeline.fieldToShow[959] = 21;
 		totalConfirmedCasesTimeline.fieldToShow[959] = totalConfirmedCasesTimeline.fieldToShow[958] + newConfirmedCasesTimeline.fieldToShow[959]; 
+		newConfirmedCasesTimeline.fieldToShow[979] = 67;
+		totalConfirmedCasesTimeline.fieldToShow[979] = totalConfirmedCasesTimeline.fieldToShow[978] + newConfirmedCasesTimeline.fieldToShow[979];
+		newConfirmedCasesTimeline.fieldToShow[980] = 39;
+		totalConfirmedCasesTimeline.fieldToShow[980] = totalConfirmedCasesTimeline.fieldToShow[979] + newConfirmedCasesTimeline.fieldToShow[980];
+		newConfirmedCasesTimeline.fieldToShow[981] = 51;
+		totalConfirmedCasesTimeline.fieldToShow[981] = totalConfirmedCasesTimeline.fieldToShow[980] + newConfirmedCasesTimeline.fieldToShow[981];
 
 		//Solución de Datos Errados en la API (Casos Recuperados)
 		newRecoveredCasesTimeline.fieldToShow[958] = 92;
 		totalRecoveredCasesTimeline.fieldToShow[958] = totalRecoveredCasesTimeline.fieldToShow[957] + newRecoveredCasesTimeline.fieldToShow[958]; 
 		newRecoveredCasesTimeline.fieldToShow[959] = 54;
 		totalRecoveredCasesTimeline.fieldToShow[959] = totalRecoveredCasesTimeline.fieldToShow[958] + newRecoveredCasesTimeline.fieldToShow[959]; 
+		newRecoveredCasesTimeline.fieldToShow[963] = 17;
+		totalRecoveredCasesTimeline.fieldToShow[963] = totalRecoveredCasesTimeline.fieldToShow[962] + newRecoveredCasesTimeline[963];
 		//Solución de Datos Errados en la API (Casos Activos)
 		totalActiveCasesTimeline.fieldToShow[958] = 634;
+		totalActiveCasesTimeline.fieldToShow[979] = 801;
+		totalActiveCasesTimeline.fieldToShow[980] = 826;
 
 	createGraphic(
 		totalConfirmedCases,
